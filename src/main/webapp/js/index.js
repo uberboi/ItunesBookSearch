@@ -44,11 +44,17 @@ $(document).ready(function() {
 	
 	function outputResults(response){
 		for(var i=0; i<response.results.length; i++){
-			var resultItems = "<h2>" + response.results[i].collectionName + "</h2>" +
-							  "<h4>" + response.results[i].artistName + "</h4>" + 
-							  "<img src = '" + response.results[i].artworkUrl100 + "'>" +
-							  "<p>" + response.results[i].description + "</p>"
-				
+			var resultItems = '<div class="item">' +
+									"<img src = '" + response.results[i].artworkUrl100 + "'>" + "</br>" +
+									'<a href="' + response.results[i].collectionViewUrl + '">iTunes</a>'  + 
+									'<div class="bookName">\
+										<h2>' + response.results[i].collectionName + '</h2>\
+										<p>(' + response.results[i].primaryGenreName + ")</p>\
+									</div>" + 
+									"<h4>" + response.results[i].artistName + "</h4>" + 
+									"<p>" + response.results[i].description + "</p>" + 
+									"<p>Price: $" +  response.results[i].collectionPrice + "</p>" + 
+								"</div>"
 			$(".results").append(resultItems);
 		}
 	}

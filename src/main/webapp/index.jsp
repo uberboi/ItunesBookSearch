@@ -1,13 +1,16 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/index.css">
-		<title>Itunes Book Search</title>
-		<h1>Itunes Book Search</h1>
+		<title>iTunes Book Search</title>
+		<h1>iTunes Book Search</h1>
 	</head>
 	<body>
-    	<input type="text" size="20" placeholder="Book Title or Author Name" id="searchText" class="searchBox"/>
-    	<button id="searchButton">search</button>
-    	
+		<div id="searchBox">
+    		<input type="text" size="20" placeholder="Book Title or Author Name" id="searchText" class="searchBox"/>
+    	</div>
+    	<p class="searchButton">
+    		<button id="searchButton">search</button>
+    	</p>
     	<div class="results">
     	</div>
     	

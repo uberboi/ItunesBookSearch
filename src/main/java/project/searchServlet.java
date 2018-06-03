@@ -23,7 +23,7 @@ public class searchServlet extends HttpServlet {
 		
 		//Perform get request
 		try {
-			URL url = new URL("https://itunes.apple.com/search?term="+sb.toString()+"&entity=audiobook&limit=1");
+			URL url = new URL("https://itunes.apple.com/search?term="+sb.toString()+"&entity=audiobook");
 			HttpURLConnection con = (HttpURLConnection) url.openConnection();
 			con.setRequestMethod("GET");
 			
