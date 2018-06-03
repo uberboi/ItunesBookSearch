@@ -40,7 +40,7 @@ public class searchServlet extends HttpServlet {
 	        //Write JSON to GET request response
 	        response.setContentType("text/html;charset=UTF-8");
 			response.getWriter().write(sb1.toString());
-	        System.out.println(sb1.toString());
+	        //System.out.println(sb1.toString());
 		} catch (IOException e) {
 	        e.printStackTrace();
 	    }
