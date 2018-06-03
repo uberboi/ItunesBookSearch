@@ -25,6 +25,14 @@ function test(){
 }
 
 $(document).ready(function() {
+	$("#searchText").keydown(function (e){
+		if (e.which==13){
+			//alert("Enter Key Pressed");
+			$(".results").empty();
+			var text = $("#searchText").val();
+			searchBooks(text);
+		}
+	});
 	$("#searchButton").click(function(){
 		$(".results").empty();
 		var text = $("#searchText").val();
