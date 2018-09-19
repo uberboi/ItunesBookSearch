@@ -29,9 +29,9 @@ public class searchServlet extends HttpServlet {
 			
 			BufferedReader in = new BufferedReader(
 	                new InputStreamReader(con.getInputStream()));
-	        String inputLine;
-	        //Create String buffer for JSON from GET request
-	        StringBuffer sb1 = new StringBuffer();
+			String inputLine;
+			//Create String buffer for JSON from GET request
+			StringBuffer sb1 = new StringBuffer();
 	
 	        while ((inputLine = in.readLine()) != null) {
 	            sb1.append(inputLine);
